@@ -18,6 +18,7 @@ Docker:
 2. Clonar el repositorio.
 3. En la raíz del proyecto ejecutar: `docker-compose up`
 
+*Nota: En caso de tener problemas revisar [instalación WSL 2](https://docs.docker.com/desktop/windows/wsl/)*
 
 Python:
 1. Crear un env. con la versión 3 de Python.
