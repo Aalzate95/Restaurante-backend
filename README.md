@@ -24,12 +24,14 @@ Docker:
 
 Python:
 1. Crear un env. con la versión 3 de Python.
+
     1. 1 Guia para creación de environments [link](https://www.programaenpython.com/miscelanea/crear-entornos-virtuales-en-python/)
     1. 2 Crear un environment con Anaconda (recomendado) [link](https://www.anaconda.com/products/individual)
 
 2. Iniciar el env. e instalar las dependencias con `pip install -r requirements.txt`
 
 3. Iniciar `psql`. Crear la base de datos con `CREATE DATABASE restaurante OWNER postgres`.
+
 
 4. De regreso el env., ejecutar `py manage.py makemigrations`.
 
