@@ -29,15 +29,24 @@ Python:
 
 2. Iniciar el env. e instalar las dependencias con `pip install -r requirements.txt`
 
-3. Una vez creado y ejecutado el environment de Python ejecutar en la raíz del proyecto `python manage.py runserver`
+3. Iniciar `psql`. Crear la base de datos con `CREATE DATABASE restaurante OWNER postgres`.
 
+4. De regreso el env., ejecutar `py manage.py makemigrations`.
 
-Si todo está funcionando todo de forma correcta, la aplicación de Django estará ejecutandose en el puerto 8000, ir a `http://localhost:8000` en su navegador web preferido.
+5. Ejecutar `py manage.py migrate`. 
 
+6. Ejecutar `py manage.py createsuperuser` con las siguientes credenciales. 
 Credenciales:
 
     user : admin
     pass : 1234
+
+7. Ejecutar en la raíz del proyecto `python manage.py runserver`
+
+
+Si todo está funcionando todo de forma correcta, la aplicación de Django estará ejecutandose en el puerto 8000, ir a `http://localhost:8000` en su navegador web preferido.
+
+
 #### Notas
 ---
 Por motivos de ser un proyecto en desarrollo tenemos:
