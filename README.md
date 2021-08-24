@@ -43,8 +43,8 @@ Por motivos de ser un proyecto en desarrollo tenemos:
 
 Para ejecutar comandos de Django como por ejemplo el `migrate` debe hacerse de la siguiente manera:
 
-    `docker-compose run web [comando Django]`
+    docker-compose run web [comando Django]
 
 P. ej.
 
-    `docker-compose run web python manage.py migrate`
+    docker-compose run web python manage.py migrate
