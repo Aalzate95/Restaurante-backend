@@ -24,18 +24,31 @@ Docker:
 
 Python:
 1. Crear un env. con la versión 3 de Python.
-    1. Guia para creación de environments [link](https://www.programaenpython.com/miscelanea/crear-entornos-virtuales-en-python/)
-    2. Crear un environment con Anaconda (recomendado) [link](https://www.anaconda.com/products/individual)
 
-2. Una vez creado y ejecutado el environment de Python instalar los requirements.
-3. Ejecutar en la raíz del proyecto `python manage.py runserver`
+    1. 1 Guia para creación de environments [link](https://www.programaenpython.com/miscelanea/crear-entornos-virtuales-en-python/)
+    1. 2 Crear un environment con Anaconda (recomendado) [link](https://www.anaconda.com/products/individual)
 
-Si todo está funcionando todo de forma correcta, la aplicación de Django estará ejecutandose en el puerto 8000, ir a `http://localhost:8000` en su navegador web preferido.
+2. Iniciar el env. e instalar las dependencias con `pip install -r requirements.txt`
 
+3. Iniciar `psql`. Crear la base de datos con `CREATE DATABASE restaurante OWNER postgres`.
+
+
+4. De regreso el env., ejecutar `py manage.py makemigrations`.
+
+5. Ejecutar `py manage.py migrate`. 
+
+6. Ejecutar `py manage.py createsuperuser` con las siguientes credenciales. 
 Credenciales:
 
     user : admin
     pass : 1234
+
+7. Ejecutar en la raíz del proyecto `python manage.py runserver`
+
+
+Si todo está funcionando todo de forma correcta, la aplicación de Django estará ejecutandose en el puerto 8000, ir a `http://localhost:8000` en su navegador web preferido.
+
+
 #### Notas
 ---
 Por motivos de ser un proyecto en desarrollo tenemos:
@@ -43,8 +56,8 @@ Por motivos de ser un proyecto en desarrollo tenemos:
 
 Para ejecutar comandos de Django como por ejemplo el `migrate` debe hacerse de la siguiente manera:
 
-    `docker-compose run web [comando Django]`
+    docker-compose run web [comando Django]
 
 P. ej.
 
-    `docker-compose run web python manage.py migrate`
+    docker-compose run web python manage.py migrate
