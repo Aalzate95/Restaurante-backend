@@ -32,6 +32,9 @@ Python:
 
 Si todo está funcionando todo de forma correcta, la aplicación de Django estará ejecutandose en el puerto 8000, ir a `http://localhost:8000` en su navegador web preferido.
 
+credenciales:
+user : admin
+pass : 1234
 #### Notas
 ---
 Por motivos de ser un proyecto en desarrollo tenemos:
