@@ -1,6 +1,5 @@
 from django.db.models import Model, CASCADE, DO_NOTHING,SET_NULL
 from django.db.models import ForeignKey, OneToOneField, ManyToManyField
-import uuid # Requerida para las instancias de libros únicos
 from django.db.models import (
     CharField,
     IntegerField,
@@ -26,4 +25,4 @@ class SolicitudesReserva(Model):
         ordering = ["-reservation_date"]
     
     def __str__(self):
-        return f"{self.id_number}"
+        return f"{self.id_number,self.name,self.number_of_persons}"

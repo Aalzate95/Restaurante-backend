@@ -24,11 +24,11 @@ Docker:
 
 Python:
 1. Crear un env. con la versión 3 de Python.
-    1. 1 Guia para creación de environments [link](https://www.programaenpython.com/miscelanea/crear-entornos-virtuales-en-python/)
-    1. 2 Crear un environment con Anaconda (recomendado) [link](https://www.anaconda.com/products/individual)
+    1. Guia para creación de environments [link](https://www.programaenpython.com/miscelanea/crear-entornos-virtuales-en-python/)
+    2. Crear un environment con Anaconda (recomendado) [link](https://www.anaconda.com/products/individual)
 
-2. Una vez creado y ejecutado el environment de Python ejecutar en la raíz del proyecto `python manage.py runserver`
-
+2. Una vez creado y ejecutado el environment de Python instalar los requirements.
+3. Ejecutar en la raíz del proyecto `python manage.py runserver`
 
 Si todo está funcionando todo de forma correcta, la aplicación de Django estará ejecutandose en el puerto 8000, ir a `http://localhost:8000` en su navegador web preferido.
 
