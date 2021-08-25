@@ -49,3 +49,7 @@ class Disponibilidad(Model):
     id_number = CharField(max_length=10,blank=False)
     table_id = CharField(max_length=5,blank=False)
     schedule_id = CharField(max_length=10,blank=False)
+    status=CharField(max_length=1200,null=True,blank=True)
+
+    def __str__(self):
+        return f"{self.id_number,self.table_id,self.schedule_id,self.status}"
