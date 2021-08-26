@@ -17,3 +17,5 @@ share/python-wheels/
 .installed.cfg
 
 data/
+
+/venv
