@@ -21,6 +21,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: Restaurante-backend
         environment_name: Restaurante-backend
-        version_label: 12345
+        version_label: ${{github.SHA}}
         region: us-east-1
         deployment_package: deploy.zip
