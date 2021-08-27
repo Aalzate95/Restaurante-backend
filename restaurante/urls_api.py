@@ -20,4 +20,4 @@ urlpatterns = [
     path('management/', include('management.urls')),
 ]
 
-urlpatterns = [path("v1/", include(urlpatterns))]
+urlpatterns = [path("api/", include(urlpatterns))]

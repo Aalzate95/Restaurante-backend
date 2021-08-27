@@ -30,7 +30,7 @@ class SolicitudesReserva(Model):
 
 class Mesa(Model):
     table_num = CharField(max_length=5,blank=False)
-    num_chairs = CharField(max_length=10,blank=False)
+    num_chairs = IntegerField(blank=False)
     description=CharField(max_length=1200,null=True,blank=True)
     location=CharField(max_length=1200,null=True,blank=True)
 
