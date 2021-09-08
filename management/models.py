@@ -20,6 +20,8 @@ class SolicitudesReserva(Model):
     description = CharField(max_length=1200, null=True, blank=True)
     number_of_persons = IntegerField(blank=True)
     reservation_date = DateTimeField(null=False, db_index=True)
+    status_choices = (("Asistió", "Asistió"),("Faltó","Faltó"),("Cancelado","Cancelado"),("Pendiente","Pendiente"))
+    status = CharField(max_length=50,choices=status_choices,default="Pendiente")
     created_date = DateTimeField(auto_now_add=True, null=True, db_index=True)
     updated_date = DateTimeField(auto_now=True)
 
@@ -37,9 +39,7 @@ class Menu(Model):
     available = BooleanField(blank=False)
     category_choices = (("Desayuno", "Desayuno"), ("Plato Fuerte",
                         "Plato Fuerte"), ("Postre", "Postre"), ("Bebidas", "Bebidas"))
-    category = CharField(max_length=75, blank=False,
-                         choices=category_choices, default="Plato Fuerte")
-
+    category = CharField(max_length=75, blank=False,choices=category_choices, default="Plato Fuerte")
     created_date = DateTimeField(auto_now_add=True, null=True, db_index=True)
     updated_date = DateTimeField(auto_now=True)
 
