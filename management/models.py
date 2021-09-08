@@ -37,6 +37,7 @@ class Menu(Model):
     price = FloatField(blank=False)
     description = CharField(max_length=1200, null=True, blank=True)
     available = BooleanField(blank=False)
+    imagen = CharField(max_length=500,blank=False,default="")
     category_choices = (("Desayuno", "Desayuno"), ("Plato Fuerte",
                         "Plato Fuerte"), ("Postre", "Postre"), ("Bebidas", "Bebidas"))
     category = CharField(max_length=75, blank=False,choices=category_choices, default="Plato Fuerte")
